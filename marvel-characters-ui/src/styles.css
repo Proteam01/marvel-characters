@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: rgb(50, 50, 50);
+    color: #FFF;
+}
+
+
+#blackout {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0.4;
+}
+
+
+#character-detail {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(43, 43, 43);
+    width: 600px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.close-dialog {
+    float: right;
+}
+
+.url-content {
+    height: 400px;
+    padding-left: 20px;
+}
+
+p {
+    width: 500px;
+}
+
+span.title {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.links {
+    width: 400px;
+    text-overflow: ellipsis;
+}
+
+.subtitle{
+    font-weight: bolder;
+}

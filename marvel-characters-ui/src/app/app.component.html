@@ -1,0 +1,43 @@
+<div class="content" role="main">
+
+  <h2>Marvel Super Heroes</h2>
+
+  <table id="heroes" >
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>description</th>
+      <th>detail</th>
+    </tr>
+    <tr *ngFor="let character of characters" >
+      <td>{{character.id}}</td>
+      <td>{{character.name}}</td>
+      <td>{{character.description}}</td>
+      <td>
+        <a href="javascript:void()" (click)="showCharacterDetails(character.id)" >view</a>
+      </td>
+    </tr>  
+  </table>
+
+
+  <div id="character-detail" >
+    <div class="header" >
+        <div class="close-dialog" ><a href="#" (click)="closeDetails()" >[x]</a></div>
+        <span class="title" >Character Details</span>
+    </div>
+    <div class="url-content" >
+      
+      <p><span class="subtitle" >id:</span>{{characterDetail.id}}</p>
+      <p><span class="subtitle" >name:</span>{{characterDetail.name}}</p>
+      
+      <p><span class="subtitle" >description:</span>{{characterDetail.description}}</p>
+        <p class="links" *ngFor="let url in characterDetail.urls" >
+          {{url}}
+        </p>
+    </div>
+</div>
+
+
+
+</div>
+<router-outlet></router-outlet>
